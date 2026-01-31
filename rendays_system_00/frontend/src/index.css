@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #DFD0B8; /* Creamy beige background */
+  color: #222831; /* Dark text */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(34, 40, 49, 0.95); /* #222831 with opacity */
+  padding: 0.8rem 2rem;
+}
+
+.navbar .logo {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.5rem;
+  color: #DFD0B8; /* Cream logo */
+}
+
+.navbar nav a {
+  margin: 0 1rem;
+  font-size: 0.95rem;
+  color: #DFD0B8; /* Cream nav links */
+}
+
+.navbar nav a:hover {
+  color: #948979; /* Muted green hover */
+}
+
+.contact-info {
+  font-size: 0.85rem;
+  text-align: right;
+  color: #DFD0B8; /* Cream contact info */
+}
+
+.hero {
+  padding: 6rem 2rem;
+  background: rgba(34, 40, 49, 0.8); /* #222831 with opacity */
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 3rem;
+  color: #DFD0B8; /* Cream heading */
+}
+
+.hero p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  color: #DFD0B8; /* Cream text */
+}
+
+.hero-buttons {
+  margin-top: 1.5rem;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #DFD0B8; /* Cream border */
+  margin-right: 1rem;
+  font-weight: bold;
+  color: #DFD0B8; /* Cream text */
+  transition: all 0.3s;
+  background-color: transparent;
+}
+
+.btn.primary {
+  background-color: #948979; /* Muted green button */
+  color: #222831; /* Dark text */
+  border-color: #948979; /* Muted green border */
+}
+
+.btn:hover {
+  background-color: #393E46; /* Dark gray hover */
+  color: #DFD0B8; /* Cream text */
+}
+
+.welcome {
+  background-color: #393E46; /* Dark gray section */
+  color: #DFD0B8; /* Cream text */
+  text-align: center;
+  padding: 2rem;
+}
+
+.welcome h3 {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.5rem;
+  color: #DFD0B8; /* Cream heading */
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #948979; /* Muted green section */
+  padding: 2rem;
+  gap: 1.5rem;
+}
+
+.service {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border: 2px solid #222831; /* Dark border */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.service img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.service:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(34, 40, 49, 0.8); /* #222831 with opacity */
+  color: #DFD0B8; /* Cream text */
+  padding: 1rem;
+  width: 100%;
+}
+
+.overlay h4 {
+  margin-top: 0;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.2rem;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(34, 40, 49, 0.7); /* #222831 with opacity */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #DFD0B8; /* Cream background */
+  color: #222831; /* Dark text */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border: 1px solid #948979; /* Muted green border */
+  border-radius: 5px;
+  background-color: #DFD0B8; /* Cream background */
+  color: #222831; /* Dark text */
+}
+
+.modal-content .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #222831; /* Dark close button */
+}
+
+/* Auth buttons */
+.nav-auth-btn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+}
+
+.nav-login {
+  background-color: #DFD0B8; /* Cream button */
+  color: #222831; /* Dark text */
+}
+
+.nav-register {
+  background-color: #948979; /* Muted green button */
+  color: #222831; /* Dark text */
+}
+
+/* Footer */
+footer {
+  background-color: #222831; /* Dark background */
+  color: #DFD0B8; /* Cream text */
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer-links a {
+  color: #948979; /* Muted green links */
+}
+
+.footer-links a:hover {
+  color: #DFD0B8; /* Cream hover */
+}
+
+/* Feedback form specific styles */
+#feedbackFormModal button {
+  background-color: #393E46; /* Dark gray button */
+  color: #DFD0B8; /* Cream text */
+}
+
+#feedbackFormModal button:hover {
+  background-color: #222831; /* Darker gray hover */
+}
+
+.auth-btn {
+  background-color: #393E46 !important; /* Dark gray auth buttons */
+  color: #DFD0B8 !important; /* Cream text */
+}
+
+.auth-btn:hover {
+  background-color: #222831 !important; /* Darker gray hover */
+}
